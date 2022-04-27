@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bukti </title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!--<link rel="stylesheet" href="css/style.css" type="text/css">-->
+</head>
+
+<br>
+
+<br>
+
+<body style="background-color: whitesmoke">
+    <div class="kolom" style="background-color:white; width:700px; height:1200px; margin:auto; margin-top:20px; margin-bottom: 20px; box-shadow: 3px 3px 5px 6px #ccc; ">
+        <div class="col-md-6">
+            <h3 style="font-family:Arial; margin: 16px; padding-top: 64px">Exploresavana</h3>
+            <p style="margin-left: 34px;">Detail Penerbangan</p>
+        </div>
+        
+        <div style="background-color: white; margin-top:0px; border: 3px solid gainsboro; width: 600px; height: 980px; margin-bottom:5px; margin-left: 49px; padding: 30px;">
+          <div class="">
+              <p id="airline" style="font-size: 35px; font-weight:bold; margin: 0px; "></p>
+              <br>
+              <p style="font-size: 14px; margin: 0px;">Flight Schedule</p>
+              <p id="time" style="font-size: 14px; margin: 0px; font-weight: bold;"></p>
+              <p id="price" style="font-size: 14px; margin: 0px; "></p>
+              <br>
+              <p style="font-size: 14px; margin: 0px">Flight Date</p>
+              <p id="depart_date" style="font-size: 14px; margin: 0px; font-weight: bold;"></p>
+              <!-- <p id="depart_date" style="margin:0px; font-weight:bold; font-size: 14;"></p> -->
+                <br>
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Dari</p>
+              <p id="from" style="margin-left: 6px; font-size: 14px;"></p>
+
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Tujuan</p>
+              <p id="to" style="margin-left: 6px; font-size: 14px;"></p>
+
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Flights Class</p>
+              <p id="classes" style="margin-left: 6px; font-size: 14px;"></p>
+    
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Detail Penumpang</p>
+              <p id="classes" style="margin-left: 6px; margin-bottom: -2px;font-size: 14px;"></p>
+              
+<br>
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Alamat</p>
+              <p id="classes" style="margin-left: 6px; font-size: 14px;"></p>
+
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Email</p>
+              <p id="classes" style="margin-left: 6px; font-size: 14px;"></p>
+
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Bagasi</p>
+              <p id="bagasi" style="margin-left: 6px;font-size: 14px;"></p>
+
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Umur</p>
+              <p id="age" style="margin-left: 6px; font-size: 14px;"></p>
+
+              <p style="margin-left: 6px; margin-bottom: 6px; font-weight:bold; font-size: 16px;">Qty</p>
+              <p id="senior" style="margin-left: 6px; margin-bottom: -2px;font-size: 14px;"></p>
+              <p id="adults" style="margin-left: 6px; margin-bottom: -2px;font-size: 14px;"></p>
+              <p id="kids" style="margin-left: 6px; margin-bottom: -2px;font-size: 14px;"></p>
+
+            <br>
+ 
+        <div class="col-md-12" style="margin-left: -40px;">
+            <ul style="padding-bottom:6px;"><strong>NOTE:</strong>
+                <li style="margin-left: 18px; padding-bottom: 2px; font-size: 10px;">Semua waktu tertera adalah waktu bandara setempat</li>
+                <li style="margin-left: 18px; font-size: 10px;">Mohon lakukan check-in minimal <strong>1jam</strong> (domestik) sebelum berangkat</li>
+                <li style="margin-left: 18px; padding-bottom: 2px; font-size: 10px;"><strong>MOHON SCREENSHOOT BUKTI BOOKING TIKET & TUNJUKAN BUKTI KEPADA PETUGAS BHANDARA WAKTU CHECK-IN </strong></li>
+
+            </ul>
+        </div>
+
+    </div>
+<script>
+
+    const dataBooking = JSON.parse(window.localStorage.getItem('dataBooking'));
+    const dataCheckout = JSON.parse(window.localStorage.getItem('dataCheckout'));
+    
+    // const dataCheckout = JSON.parse(window.localStorage.getItem('dataCheckout'));
+
+    document.getElementById('depart_date').innerText = dataBooking.depart
+    document.getElementById('from').innerText = dataBooking.from
+    document.getElementById('classes').innerText = dataBooking.classes
+    document.getElementById('to').innerText = dataBooking.to
+    document.getElementById('senior').innerText = dataBooking.senior
+    document.getElementById('adults').innerText = dataBooking.adults
+    document.getElementById('kids').innerText = dataBooking.kids
+    document.getElementById('airline').innerText = dataBooking.airline
+    document.getElementById('time').innerText = dataBooking.time
+    
+    document.getElementById('firstName').innerText = dataCheckout.firstName
+    document.getElementById('lastName').innerText = dataCheckout.lastName
+    document.getElementById('address').innerText = dataCheckout.address
+    document.getElementById('email').innerText = dataCheckout.email
+    document.getElementById('bagasi').innerText = dataCheckout.bagasi
+    document.getElementById('age').innerText = dataCheckout.age
+
+
+
+
+       
+       </script>
+
+    </body>
+</html>

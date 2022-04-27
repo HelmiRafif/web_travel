@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Travel Website</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" type="text/css" href="main.css">
+
+
+<body>
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a style="font-size: 35px;" class="navbar-brand" href="#">Exploresavana</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul style="padding-right: 50px;font-size: 20px;" class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#top">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#booking">Booking</a>
+      </li>
+	 <!-- <li class="nav-item active">
+        <a class="nav-link" href="#destination">Destination</a>
+      </li> -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#destinations & routes">Destinations & Routes</a>
+      </li> 
+	  <li class="nav-item active">
+        <a class="nav-link" href="#about">About</a>
+      </li>   
+      <li class="nav-item active">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li> 
+	  <li class="nav-item active">
+	  <a href="indexlogin.html"class="btn btn-primary float-right " style="margin-left: 23px;
+	  margin-top: 5px;"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+		
+	</li>
+</li>
+    </ul>
+    
+  </div>
+</nav>
+<!-- end nav -->
+
+<!-- banner -->
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="width: 100%; height: 500px;" src="img/banner_1.jpg" class="d-block w-100 banner" alt="...">
+     
+    </div>
+    <div class="carousel-item">
+      <img style="width: 100%; height: 500px;" src="img/banner_2.png" class="d-block w-100 banner" alt="">
+      
+    </div>
+    <div class="carousel-item">
+      <img style="width: 100%; height: 500px;" src="img/banner_3.png" class="d-block w-100 banner" alt="...">
+      
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- banner end -->
+<hr>
+
+<!-- card  -->
+<form id="form_booking">  
+<div id="booking">
+<div class="card shadow mb-5 bg-white rounded">
+	
+	<!--Card-Body-->
+	<div class="card-body">
+	  <!--Card-Title-->
+	  <p class="card-title text-center shadow mb-5 rounded">Travel Booking Form</p>
+	  <div class="icons text-center">
+		<i class="fa fa-plane fa-2x" aria-hidden="true"></i>
+	  </div>
+	  <hr />
+	  <p class="searchText"><strong>Search For Cheap Flights</strong></p>
+	
+	  <!--Second Row-->
+	  <div class="row">
+		<div class="col-sm-6">
+		  <select class="browser-default custom-select mb-4" id="from" required>
+			<option value="" disabled="" selected="">From City/Airport</option>
+			<option value="Bandara Juanda, Sidoarjo">Bandara Juanda, Sidoarjo</option>
+			<option value="Bandar Udara Internasional Soekarno–Hatta">Bandar Udara Internasional Soekarno–Hatta</option>
+			<option value="Bandara Abdul Rachman Saleh, Malang">Bandara Abdul Rachman Saleh, Malang</option>
+			<option value="Bandara Trunojoyo, Madura">Bandara Trunojoyo, Madura</option>
+			<option value="Bandara Ngurah Rai, Bali">Bandara Ngurah Rai, Bali</option>
+			<option value="Bandara Pangkal Udara, Surabaya">Bandara Pangkal Udara, Surabaya</option>
+			<option value="Bandara Udara, Banyuwangi">Bandara Udara, Banyuwangi</option>
+			<option value="Bandara Udara, Kediri">Bandara Udara, Kediri</option>
+		  </select>
+		</div>
+		<div class="col-sm-6">
+		  <select class="browser-default custom-select mb-4" id="to" required>
+			<option value="" disabled="" selected="">To City/Airport</option>
+			<option value="Bandara Juanda, Sidoarjo">Bandara Juanda, Sidoarjo</option>
+			<option value="Bandar Udara Internasional Soekarno–Hatta">Bandar Udara Internasional Soekarno–Hatta</option>
+			<option value="Bandara Abdul Rachman Saleh, Malang">Bandara Abdul Rachman Saleh, Malang</option>
+			<option value="Bandara Ngurah Rai, Bali">Bandara Ngurah Rai, Bali</option>
+			<option value="Bandara Pangkal Udara, Surabaya">Bandara Pangkal Udara, Surabaya</option>
+			<option value="Bandara Udara, Banyuwangi">Bandara Udara, Banyuwangi</option>
+			<option value="Bandara Udara, Kediri">Bandara Udara, Kediri</option>
+
+		  </select>
+		</div>
+	  </div>
+	  <!--Third Row-->
+	  <div class="row">
+		<div class="col-sm-6">
+			<div class="form-group d-sm-flex margin">
+				<div class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative">
+				<input id="depart_date" type="date" required placeholder="Depart Date" class="form-control" />
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<select class="browser-default custom-select mb-4" id="classes" required>
+			  <option disabled="" selected="">Flight Classes</option>
+				<option value="Economy">Economy</option>
+				<option value="Business">Business</option>
+				<option value="First Class">Frist Class</option>
+			</select>
+		  </div>
+	  </div>
+	  <div class="row">
+		<div class="col-sm-4">
+		  <select class="browser-default custom-select mb-4" id="kids" required>
+			<option value="" disabled="" selected="">Kids(0-14)</option>
+			<option value="0 Kids">0</option>
+			<option value="1 Kids">1</option>
+			<option value="2 kids">2</option>
+			<option value="3 kids">3</option>
+			<option value="4 kids">4</option>
+			<option value="5 kids">5</option>
+			<option value="6 kids">6</option>
+			<option value="7 kids">7</option>
+			<option value="8 kids">8</option>
+			<option value="9 kids">9</option>
+			<option value="10 kids">10</option>
+		  </select>
+		</div>
+		<div class="col-sm-4">
+		  <select class="browser-default custom-select mb-4" id="adults"required>
+			<option value="" disabled="" selected="">Adults(15-64)</option>
+			<option value="0 Adults">0</option>
+			<option value="1 Adults">1</option>
+			<option value="2 Adults">2</option>
+			<option value="3 Adults">3</option>
+			<option value="4 Adults">4</option>
+			<option value="5 Adults">5</option>
+			<option value="6 Adults">6</option>
+			<option value="7 Adults">7</option>
+			<option value="8 Adults">8</option>
+			<option value="9 Adults">9</option>
+			<option value="10 Adults">10</option>
+		  </select>
+		</div>
+		<div class="col-sm-4">
+		  <select class="browser-default custom-select mb-4" id="senior" required>
+			<option value="" disabled="" selected="">Seniors(65+)</option>
+			<option value="0 Seniors">0</option>
+			<option value="1 Seniors">1</option>
+			<option value="2 Seniors">2</option>
+			<option value="3 Seniors">3</option>
+			<option value="4 Seniors">4</option>
+			<option value="5 Seniors">5</option>
+			<option value="6 Seniors">6</option>
+			<option value="7 Seniors">7</option>
+			<option value="8 Seniors">8</option>
+			<option value="9 Seniors">9</option>
+			<option value="10 Seniors">10</option>
+		  </select>
+		</div>
+		<div class="mx-auto">
+			<select class="browser-default custom-select" id="price" required>
+				<option value="" disabled="" selected="">Airlines</option>
+				<option value="Sriwijaya / Rp200.000,-">Sriwijaya / Rp200.000,-</option>
+				<option value="Lion Air / Rp700.000,-">Lion Air / Rp700.000,-</option>
+				<option value="Garuda / Rp905.000,-">Garuda / Rp905.000,-</option>
+				<option value="Citilink / Rp800.000,-">Citilink / Rp800.000,-</option>
+				<option value="Batik Air / Rp575.000,-">Batik Air / Rp575.000,-</option>
+				<option value="Air Asia / Rp200.000,-">Air Asia / Rp200.000,-</option>
+				<option value="NAM Air / Rp200.000,-">NAM Air / Rp200.000,-</option>
+			  </select>
+		</div>
+	  </div>
+	  <input type="submit" value="Cari"  data-toggle="modal" data-target="#exampleModal"  class="btn btn-primary float-right mt-5"></input>
+	</div>
+  </div>
+
+</div>
+<!-- end card -->		
+</form>
+
+<hr>
+<!-- Our Destinations -->
+<div id="destination">
+<div class="container">
+	<div class="destinations">
+			<h1 class="text-center">Our Destinations</h1>
+			<p class="text-center">Choose Your Next Destination</p>
+			<br><br>
+			<div class="row">
+				<!-- <div class="col-sm-4">
+					<div class="destinations_img des_photo">
+					  <img src="img/des.jpg" alt="Norway" sty
+					  le="width:100%;">
+					  <div class="text-block">
+					    <h4>Santorini</h4>
+					    <p>Rp. 24.000.000</p>
+					  </div>
+					</div>
+				</div> -->
+				<div class="col-sm-4">
+					<div class="destinations_img des_photo">
+					  <img src="img/des.jpg"" alt="Norway" style="width:100%;">
+					  <div class="text-block">
+					    <h4>Santorini</h4>
+					    <p>Rp. 24.000.000</p>
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="destinations_img des_photo">
+					  <img src="img/des_1.jpg" alt="Norway" style="width:100%;">
+					  <div class="text-block">
+					    <h4>Australia</h4>
+					    <p>Rp. 21.000.000</p>
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="destinations_img des_photo">
+					  <img src="img/des_2.jpg" alt="Norway" style="width:100%;">
+					  <div class="text-block">
+					    <h4>Jerman</h4>
+					    <p>Rp. 4.000.000</p>
+					  </div>
+					</div>
+				</div>
+			</div>
+<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="destinations_img des_photo">
+					  <img src="img/des_3.jpg" alt="Norway" style="width:100%;">
+					  <div class="text-block">
+					    <h4>Jepang</h4>
+					    <p>Rp. 24.000.000</p>
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="destinations_img des_photo">
+					  <img src="img/des_4.jpg" alt="Norway" style="width:100%;">
+					  <div class="text-block">
+					    <h4>Dubai</h4>
+					    <p>Rp. 21.000.000</p>
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="destinations_img des_photo">
+					  <img src="img/des_5.jpg" alt="Norway" style="width:100%;">
+					  <div class="text-block">
+					    <h4>London</h4>
+					    <p>Rp. 3.000.000</p>
+					  </div>
+					</div>
+				</div>
+			</div>
+
+	</div>
+</div>
+<div>
+<!-- Our Destinations end -->
+
+<!-- Tujuan & Rute -->
+<div id="destinations & routes">
+	<div class="section-title text-center center">
+	  <div class="overlay">
+		<hr>
+		<p><h1>Berikut Beberapa Daftar Tujuan & Rute Populer </h1></p>
+	  </div>
+	</div>
+	<br>
+	<div class="container-fluid d-flex flex-row px-5">
+	  <div class="col-xs-12 col-sm-6">
+		<div class="menu-section">
+		  <h2 class="menu-section-title">Tujuan Populer</h2>
+		  <br>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Bali  </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Singapore  </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Pontianak </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Jakarta </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Padang </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Makassar </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Surabaya </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Semarang </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Lampung </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Medan </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Palembang </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Pekanbaru </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Jogja </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Balikpapan </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Murah ke Solo </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-xs-12 col-sm-6">
+		<div class="menu-section">
+		  <h2 class="menu-section-title">Rute Populer</h2>
+		  <br>	  
+			<div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Bali - Jakarta </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Jakarta - Medan </div>
+			<div class="menu-item-price"> Rp. 500.000 </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Jakarta - Semarang </div>
+			<div class="menu-item-price"> Rp. 400.000 </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Jakarta - Jogja </div>
+			<div class="menu-item-price"> Rp. 250.000  </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Jakarta - Surabaya </div>
+			<div class="menu-item-price"> Rp. 280.000 </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Padang - Jakarta </div>
+			<div class="menu-item-price"> Rp. 700.000 </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Jakarta - Banyuwangi </div>
+			<div class="menu-item-price"> Rp. 950.000 </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  <div class="menu-item">
+			<div class="menu-item-name"> Tiket Pesawat Jakarta - Palembang </div>
+			<div class="menu-item-price"> Rp. 650.000 </div>
+			<div class="menu-item-description"></div>
+		  </div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+<br>
+<br>
+<hr>
+<br>
+
+
+<!-- About Section -->
+<div id="about">
+	<div class="container">
+	  <div class="row">
+		<div class="col-xs-12 col-md-6 ">
+		  <div class="about-img"><img src="img/blog2.jpg" class="img-responsive" alt=""></div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+		  <div class="about-text">
+			<h2>Exploresavana </h2>
+			<br>
+			<p>Exploresavana datang lagiii! Saatnya wujudkan impian kamu untuk liburan dengan Exploresavana. Terbang ke destinasi impian bisa jadi cara baru liburan seru yang patut kamu coba lho, sobat tiket. Ingin liburan kamu semakin berkesan kali ini? Ayo cari inspirasi destinasi liburan baru, dan susun rencana liburan kamu yang mengesankan! Tentunya akan menjadi pengalaman liburan yang tak terlupakan. Kamu bisa pesan tiket Pesawat ke banyak destinasi di Exploresavana dengan harga yang ramah di kantong. Penerbangan domestik ataupun internasional bisa kamu pesan dengan mudah dan sesuai dengan budget yang kamu miliki. Mau dapetin harga tiket pesawat yang lebih terjangkau? Pakai promo tiket pesawat pastinya bisa bikin kamu berangkat liburan!
+  
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+<!-- About Section -->
+<hr>
+
+<!-- contact -->
+<div id='contact' >
+	<div class="container contact-form">
+             <form method="post">
+                <h3>Drop Us a Message</h3>
+                <br>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContactSubmit" value="Send Message" />
+                       </div>
+                      </div>
+                </div>
+            </form>
+</div>	
+</div>
+<!-- contact -->
+<br>
+<!-- Footer -->
+<section id="footer">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+			<p class="h6">&copy All right Reversed.<a class="text-green ml-2" target="_blank">Exploresavana</a></p>
+		</div>
+		</hr>
+	</div>	
+</div>
+</section>
+<!-- ./Footer -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header"> 
+		  <h5 class="modal-title" id="exampleModalLabel">EXSPLORSAVANA</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="list-group">
+				<a id="sriwijaya" href="#" onclick="simpanData('Sriwijaya','Rp.200.000', '15:00 - 14:30')" class="list-group-item list-group-item-action">
+				  <div class="d-flex w-100 justify-content-between">
+					<h5 class="mb-1">Sriwijaya</h5>
+					<small class="text-muted"><strong>Rp.200.000</strong>/orng</small>
+				  </div>
+				  <p class="mb-1">--------</p>
+				  <small class="text-muted"><strong>15:00 - 14:30</strong>(1,5j)</small>
+				</a>
+				<a id="lion_air"  href="#" onclick="simpanData('Lion air','Rp.700.000', '21:00 - 23:00')" class="list-group-item list-group-item-action">
+				  <div class="d-flex w-100 justify-content-between">
+					<h5 class="mb-1">Lion Air</h5>
+					<small class="text-muted"><strong>Rp.700.000</strong>/orng</small>
+				  </div>
+				  <p class="mb-1">--------</p>
+				  <small class="text-muted"><strong>21:00 - 23:00 </strong>(2j)</small>
+				</a>
+				<a id="Garuda"  href="#" onclick="simpanData('Garuda','Rp.905.000', '19:00 - 20:30 ')" class="list-group-item list-group-item-action">
+					<div class="d-flex w-100 justify-content-between">
+					  <h5 class="mb-1">Garuda </h5>
+					  <small class="text-muted"><strong>Rp.905.000</strong>/orng</small>
+					</div>
+					<p class="mb-1">--------</p>
+					<small class="text-muted"><strong>19:00 - 20:30 </strong>(1,5j)</small>
+				  </a>
+				  <a id="Citilink"  href="#" onclick="simpanData('Citilink','Rp.800.000', '09:00 - 11:30')" class="list-group-item list-group-item-action">
+					<div class="d-flex w-100 justify-content-between">
+					  <h5 class="mb-1">Citilink</h5>
+					  <small class="text-muted"><strong>Rp.800.000</strong>/orng</small>
+					</div>
+					<p class="mb-1">--------</p>
+					<small class="text-muted"><strong>09:00 - 11:30 </strong>(2,5j)</small>
+				  </a>
+				  <a id="Batik_air"  href="#" onclick="simpanData('Batik Air','Rp.575.000', '01:00 - 03:00')" class="list-group-item list-group-item-action">
+				  <div class="d-flex w-100 justify-content-between">
+					  <h5 class="mb-1">Batik Air</h5>
+					  <small class="text-muted"><strong>Rp.575.000</strong>/orng</small>
+					</div>
+					<p class="mb-1">--------</p>
+					<small class="text-muted"><strong>01:00 - 03:00</strong>(2j)</small>
+				  </a>
+				  <a id="Air_asia"  href="#" onclick="simpanData('Air Asia','Rp.200.000', '06:00 - 07:00')" class="list-group-item list-group-item-action">
+				  <div class="d-flex w-100 justify-content-between">
+					  <h5 class="mb-1">Air Asia</h5>
+					  <small class="text-muted"><strong>Rp.200.000</strong>/orng</small>
+					</div>
+					<p class="mb-1">--------</p>
+					<small class="text-muted"><strong>06:00 - 08:00</strong>(2j)</small>
+				  </a>
+				  <a id="NAM_air"  href="#" onclick="simpanData('NAM air','Rp.200.000', '06:00 - 07:00')" class="list-group-item list-group-item-action">
+				  <div class="d-flex w-100 justify-content-between">
+					  <h5 class="mb-1">NAM air</h5>
+					  <small class="text-muted"><strong>Rp.200.000</strong>/orng</small>
+					</div>
+					<p class="mb-1">--------</p>
+					<small class="text-muted"><strong>06:00 - 08:00</strong>(2j)</small>
+				  </a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+var fromElement = document.getElementById("from");
+var toElement = document.getElementById("to");
+var classElement = document.getElementById("classes");
+var departElement = document.getElementById("depart_date");
+var kidsElement = document.getElementById("kids");
+var seniorElement = document.getElementById("senior");
+var adultsElement = document.getElementById("adults");
+var sriwijayaElement = document.querySelector("#sriwijaya > div > h5");
+
+function simpanData(airline, price, time) {
+		window.localStorage.setItem('dataBooking', JSON.stringify({
+					from: fromElement.value,
+			to: toElement.value,
+			kids: kidsElement.value,
+			classes: classElement.value,
+			senior: seniorElement.value,
+			adults: adultsElement.value,
+			depart: departElement.value,
+			airline: airline,
+			price: price,
+			time: time,
+					}
+			));
+
+			window.location = 'indexlogin.html'
+}
+
+	var formElement = document.getElementById("form_booking");
+	
+	formElement.addEventListener("submit", function(evt) {
+		evt.preventDefault();
+
+	});
+
+	var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+  clearInterval(myTimer);
+}
+
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}
+</script>
+
+</body>
+</html>
